@@ -8,7 +8,7 @@ creating a simple project using two  Arduino boards--one with a button and the o
 # Here's a step-by-step guide to achieving this:
 
   # Materials Needed:
-   1.﻿﻿﻿ Two Arduino boards (e.g., Arduino Uno).
+   1. Two Arduino boards (e.g., Arduino Uno).
    2. wires.
    3. Push-button.
    4. LED.
@@ -18,17 +18,19 @@ creating a simple project using two  Arduino boards--one with a button and the o
 
   ![circle](Circle.png)
 
-   First:
-     I2C Connections:
-    You can find the connection you need by utilizing this Link:
+  First:
+    I2C Connections:
+    
+   You can find the connection you need by utilizing this Link:
     [Link](https://www.tinkercad.com/things/dPemnou0diO-serial-communication-between-two-arduino)
     
-   Second: 
+  Second: 
      Arduino 1 (Button) Connections:
+     
    1. ﻿﻿Connect one leg of the button to GND.
    2. ﻿﻿Connect the other leg of the button to a digital pin (e.g., Pin 2).
 
-   Third: 
+  Third: 
     Arduino 2 (LED) Connections:
 
    1.﻿﻿ Connect the anode (longer leg) of the LED to a current-limiting resistor.
