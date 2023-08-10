@@ -19,7 +19,7 @@ creating a simple project using two  Arduino boards--one with a button and the o
   ![circle](Circle.png)
 
   First:
-    I2C Connections: 
+  I2C Connections: 
     
    You can find the connection you need by utilizing this Link:
     [Link](https://www.tinkercad.com/things/dPemnou0diO-serial-communication-between-two-arduino)
