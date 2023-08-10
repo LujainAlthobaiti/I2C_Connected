@@ -6,26 +6,31 @@ Here's a step-by-step guide to achieve this:
 
 # Materials Needed:
 
-   1.﻿﻿﻿ Two Arduino boards (e.g., Arduino Uno)
-   ﻿﻿﻿2. wires
-   ﻿﻿﻿3. Push-button 
-﻿﻿﻿   4. LED
-   ﻿﻿﻿5. Resistor 
+1.﻿﻿﻿ Two Arduino boards (e.g., Arduino Uno)
+2. wires
+3. Push-button 
+4. LED
+5. Resistor 
    
 # Circuit Connections: 
 
-  ![circle](circle.png)
+  ![circle](Circle.png)
 
-Arduino 1 (Button) Connections:
+First: I2C Connections:
+  By using this Link you will be able to find the connection you need:
+    [Link](https://www.tinkercad.com/things/dPemnou0diO-serial-communication-between-two-arduino)
+    
+Second: Arduino 1 (Button) Connections:
 
-﻿﻿Connect one leg of the button to GND.
-﻿﻿Connect the other leg of the button to a digital pin (e.g., Pin 2).
-﻿﻿Add a pull-up resistor by connecting a resistor (10k ohms) between the digital pin and +5V.
-﻿﻿Connect the Arduino's GND to the breadboard's GND and + 5V to the breadboard's +5V.
-Arduino 2 (LED) Connections:
-﻿﻿Connect the anode (longer leg) of the LED to a current-limiting resistor (220-330 ohms).
-﻿﻿Connect the other end of the resistor to a digital pin (e.g., Pin 13).
-﻿﻿Connect the cathode (shorter leg) of the LED to GND.
+1. ﻿﻿Connect one leg of the button to GND.
+2. ﻿﻿Connect the other leg of the button to a digital pin (e.g., Pin 2).
+
+Third: Arduino 2 (LED) Connections:
+
+1.﻿﻿ Connect the anode (longer leg) of the LED to a current-limiting resistor.
+2. ﻿﻿Connect the other end of the resistor to 5V.
+3. ﻿﻿Connect the cathode (shorter leg) of the LED to a digital pin (e.g., Pin 13).
+
 
 # Arduino Code:
 
@@ -61,3 +66,37 @@ Arduino 1 (Button) Code:
 
 Arduino 2 (LED) Code:
 
+
+    int led = 13;
+    char x;
+
+    void setup() 
+    {
+  
+     pinMode(led, OUTPUT);
+     Serial.begin(9600); 
+  
+    }
+
+    void loop() 
+    {
+
+     if(Serial.available()>0){
+   
+       x = Serial.read();
+
+         switch (x){
+         case 'L':
+         digitalWrite(led, LOW);
+         break;
+    
+         case 'H':
+           digitalWrite(led, HIGH);
+         break;
+
+         default:
+         break; 
+        }
+      }
+
+      }
