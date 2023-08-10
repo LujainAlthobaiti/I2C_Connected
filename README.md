@@ -5,7 +5,7 @@ creating a simple project using two  Arduino boards--one with a button and the o
  
  The term "Inter-Integrated Circuit" is an abbreviation. For sending data across brief distances, low-speed serial communication protocols like I2C are utilized. This protocol is not suggested if data needs to be sent over a significant distance. Therefore, our objective is to build a straightforward project utilizing two Arduino boards, one of which has a button and the other an LED.
 
-# Here's a step-by-step guide to achieve this:
+# Here's a step-by-step guide to achieving this:
 
   # Materials Needed:
 
@@ -20,7 +20,7 @@ creating a simple project using two  Arduino boards--one with a button and the o
   ![circle](Circle.png)
 
    First: I2C Connections:
-     By using this Link you will be able to find the connection you need:
+    You can find the connection you need by utilizing this Link:
        [Link](https://www.tinkercad.com/things/dPemnou0diO-serial-communication-between-two-arduino)
     
    Second: Arduino 1 (Button) Connections:
@@ -104,10 +104,11 @@ creating a simple project using two  Arduino boards--one with a button and the o
 
       }
 
-   # Schematic View
+   # Schematic View: 
 
    ![photo](schematic.png)
 
    # Simulation:
-
-  [Link](https://www.tinkercad.com/things/8ZdHR6qkxsI)
+  
+   You can find the Simulation via this Link:
+     [Link](https://www.tinkercad.com/things/8ZdHR6qkxsI)
